@@ -1,0 +1,14 @@
+{
+  "_id": ObjectId, // Unique identifier for the post
+  "authorId": ObjectId, // User ID of the post creator
+  "content": String, // Text content of the post
+  "createdAt": Date, // Timestamp for when the post was created
+  "comments": [
+    {
+      "_id": ObjectId, // Unique ID for the comment
+      "authorId": ObjectId, // User ID of the commenter
+      "content": String, // Text of the comment
+      "createdAt": Date // Timestamp of the comment
+    }
+  ]
+}
